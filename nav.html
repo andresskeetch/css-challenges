@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav</title>
+</head>
+<style>
+  body {
+    margin: 0px;
+    background: rgb(2, 0, 36);
+    background: #303F9F;
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav>ul>li {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+    position: relative;
+  }
+
+  nav>ul>li>ul {
+    top: 35px;
+    left: 0px;
+    position: absolute;
+    width: 100px;
+    border-radius: 10px;
+    background: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    transition: all 1s ease-in;
+    display: none;
+
+  }
+
+  nav>ul>li>ul>li {
+    list-style: none;
+    padding: 5px 10px;
+  }
+
+  nav>ul>li>ul>li:hover {
+    background: #3F51B5;
+    border-radius: 10px;
+  }
+
+  nav>ul>li:hover>ul {
+    display: block;
+  }
+
+
+
+
+  nav>ul>li:hover {
+    background: #3F51B5;
+
+  }
+</style>
+
+<body>
+  <nav>
+    <ul>
+      <li>Inicio</li>
+      <li>Perfil</li>
+      <li>Sesion
+        <ul>
+          <li>Sub item 1</li>
+          <li>Sub item 2</li>
+          <li>Sub item 3</li>
+          <li>Sub item 4</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+</html>
